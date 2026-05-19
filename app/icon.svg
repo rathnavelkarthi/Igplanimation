@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="globe" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a3a6f"/>
+      <stop offset="70%" stop-color="#0b1d3a"/>
+      <stop offset="100%" stop-color="#050b1a"/>
+    </radialGradient>
+    <linearGradient id="eagle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffb083"/>
+      <stop offset="55%" stop-color="#ff7a45"/>
+      <stop offset="100%" stop-color="#c2451d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Globe -->
+  <circle cx="32" cy="44" r="16" fill="url(#globe)"/>
+  <!-- Meridians / equator -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="0.9">
+    <ellipse cx="32" cy="44" rx="16" ry="6"/>
+    <ellipse cx="32" cy="44" rx="6"  ry="16"/>
+    <ellipse cx="32" cy="44" rx="11" ry="16"/>
+  </g>
+  <!-- Rim highlight -->
+  <circle cx="32" cy="44" r="16" fill="none" stroke="#ff7a45" stroke-opacity="0.55" stroke-width="1.1"/>
+
+  <!-- Eagle silhouette, wings spread, perched above globe -->
+  <g fill="url(#eagle)">
+    <!-- Body + head -->
+    <path d="M32 14
+             c-1.6 0-2.8 1-3.2 2.5
+             c-0.3 1.2 0.2 2.3 1.1 3.0
+             l-0.4 1.1
+             h5.0
+             l-0.4 -1.1
+             c0.9 -0.7 1.4 -1.8 1.1 -3.0
+             C34.8 15 33.6 14 32 14 Z"/>
+    <!-- Beak -->
+    <path d="M32 16.2 l-1.4 1.4 l1.4 0.2 l1.4 -0.2 z" fill="#ffd9b8"/>
+    <!-- Left wing -->
+    <path d="M29.4 20
+             C24 19.2 17 21 10 26
+             c5 -1 9 -0.8 12 0.4
+             c-3 0.2 -6 1.4 -8 3.4
+             c4 -0.6 7 0 9 1.2
+             c-2.2 0.4 -4.4 1.6 -5.6 3.2
+             c4 -0.4 7.6 0.4 10 2.2
+             c1.2 0.8 2.4 1.6 3.6 1.6
+             V20 Z"/>
+    <!-- Right wing -->
+    <path d="M34.6 20
+             C40 19.2 47 21 54 26
+             c-5 -1 -9 -0.8 -12 0.4
+             c3 0.2 6 1.4 8 3.4
+             c-4 -0.6 -7 0 -9 1.2
+             c2.2 0.4 4.4 1.6 5.6 3.2
+             c-4 -0.4 -7.6 0.4 -10 2.2
+             c-1.2 0.8 -2.4 1.6 -3.6 1.6
+             V20 Z"/>
+    <!-- Tail / talons gripping globe -->
+    <path d="M30 30 h4 v6 l-2 2 l-2 -2 z"/>
+    <path d="M28.5 36.5 l1.6 0 l-0.4 2 z"/>
+    <path d="M33.9 36.5 l1.6 0 l-0.4 2 z"/>
+  </g>
+</svg>

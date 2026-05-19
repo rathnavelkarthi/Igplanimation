@@ -19,11 +19,15 @@ export default function Home() {
       <main id="top" className="relative">
         <ScrollSequence />
 
-        <Manifesto />
+        <section id="manifesto">
+          <Manifesto />
+        </section>
 
         <Numbers />
 
-        <Capabilities />
+        <section id="capabilities">
+          <Capabilities />
+        </section>
 
         <section id="process">
           <Process />
@@ -37,7 +41,9 @@ export default function Home() {
           <Work />
         </section>
 
-        <Industries />
+        <section id="industries">
+          <Industries />
+        </section>
 
         <Founders />
 
@@ -45,7 +51,9 @@ export default function Home() {
           <FAQ />
         </section>
 
-        <Footer />
+        <section id="contact">
+          <Footer />
+        </section>
       </main>
     </>
   );
