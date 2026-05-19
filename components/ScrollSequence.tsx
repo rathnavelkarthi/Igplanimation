@@ -122,7 +122,7 @@ export default function ScrollSequence() {
     const tick = () => {
       const t = targetFrameRef.current;
       const c = renderedFrameRef.current;
-      const lerp = isMobile ? 0.32 : 0.18;
+      const lerp = isMobile ? 0.45 : 0.18;
       const next = c + (t - c) * lerp;
       const snapped = Math.abs(next - t) < 0.04 ? t : next;
       if (snapped !== c) {
@@ -166,7 +166,7 @@ export default function ScrollSequence() {
       ref={wrapperRef}
       id="hero"
       className="relative w-full"
-      style={{ height: isMobile ? "280vh" : "550vh", background: bg }}
+      style={{ height: isMobile ? "160vh" : "550vh", background: bg }}
     >
       <div
         className="sticky top-0 w-full overflow-hidden"
